@@ -57,6 +57,13 @@
   .card a.buy{font-weight:700;text-decoration:none;background:var(--mustard);padding:8px 14px;border:2px solid var(--ink)}
   .card a.buy:hover{background:var(--orange);color:var(--cream)}
 
+  .start h2{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:16px}
+  .start .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:36px}
+  .step{border:3px solid var(--ink);background:#fff;padding:24px;box-shadow:8px 8px 0 var(--ink)}
+  .step .n{display:inline-block;font-family:'Archivo Black',sans-serif;background:var(--blue);color:var(--cream);width:44px;height:44px;text-align:center;line-height:44px;font-size:1.2rem;margin-bottom:14px}
+  .step h3{font-size:1.1rem;margin-bottom:10px}
+  .step p{font-size:.9rem}
+  .step code{background:var(--cream);border:1px dashed var(--ink);padding:2px 6px;font-size:.82rem;display:inline-block;margin-top:8px}
   .gary{background:var(--mustard)}
   .gary .inner{display:flex;gap:36px;align-items:center;flex-wrap:wrap}
   .gary .bot{flex:0 0 180px}
@@ -85,6 +92,7 @@
       Prompts &amp; Pliers
     </a>
     <nav>
+      <a href="#start">Start here</a>
       <a href="#shop">Playbooks</a>
       <a href="#gary">Gary</a>
       <a href="#list">Free stuff</a>
@@ -112,10 +120,24 @@
   </div>
 </section>
 
+<section class="start" id="start">
+  <div class="wrap">
+    <h2>Never used AI? Start here. It's a 20-minute setup.</h2>
+    <p>Every playbook assumes you've done these four things. Do them once, on a slow Tuesday, with coffee.</p>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h3>Get an AI assistant</h3><p>Sign up free at <a href="https://claude.ai">claude.ai</a> (our pick) or chatgpt.com. The free tier is plenty to start. No credit card, no installing anything — it's a website where you type and it types back.</p></div>
+      <div class="step"><span class="n">2</span><h3>Say an actual thing about your business</h3><p>Skip "write me a poem." Try this instead:<code>I run a [your business] in [town]. What are 5 tasks I do every week that you could help with? Ask me questions first.</code></p><p style="margin-top:8px;font-size:.9rem">The "ask me questions first" part is the whole trick.</p></div>
+      <div class="step"><span class="n">3</span><h3>Learn the one rule</h3><p>AI gives back what you give it. "Write a customer email" gets you mush. "Write a 60-word reply to a customer asking why their fence quote went up $200 — friendly, no groveling, materials cost more now" gets you something you'd actually send.</p></div>
+      <div class="step"><span class="n">4</span><h3>Never trust, always verify</h3><p>AI confidently makes things up — prices, policies, staff members you don't employ. Read everything before it leaves your shop. Every playbook includes a checklist for exactly this.</p></div>
+    </div>
+    <a class="btn" href="#list" style="margin-top:40px">Done? Get your first playbook free →</a>
+  </div>
+</section>
+
 <section class="shop" id="shop">
   <div class="wrap">
     <h2>The Playbooks</h2>
-    <p>$19 each. Bundle of all six for $49. Written for humans, tested on actual businesses.</p>
+    <p>$19 each. Bundle of all six for $49. Written for humans, built around the problems real businesses actually have.</p>
     <div class="grid">
       <div class="card"><span class="num">PLAYBOOK 01</span><h3>The Review Whisperer</h3><p>Answer every Google review — the glowing ones, the unhinged ones — in your own voice, 15 minutes a week. Includes the "1-star from someone who's never been a customer" protocol.</p><div class="row"><span class="price">$19</span><a class="buy" href="#list">Get it</a></div></div>
       <div class="card"><span class="num">PLAYBOOK 02</span><h3>Quotes While You Sleep</h3><p>Turn a voice memo from the job site into a clean, priced estimate before your coffee's done. Your margins stay yours; the typing doesn't.</p><div class="row"><span class="price">$19</span><a class="buy" href="#list">Get it</a></div></div>
