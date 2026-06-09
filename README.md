@@ -1,2 +1,2 @@
-# promptsandpliers
-AI tutorials for people with real jobs — promptsandliers.com
+# Prompts & Pliers
+AI tutorials for people with real jobs — promptsandpliers.com
