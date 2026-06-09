@@ -56,6 +56,11 @@
   .price{font-family:'Archivo Black',sans-serif;font-size:1.3rem}
   .card a.buy{font-weight:700;text-decoration:none;background:var(--mustard);padding:8px 14px;border:2px solid var(--ink)}
   .card a.buy:hover{background:var(--orange);color:var(--cream)}
+  .card.free{background:var(--ink);color:var(--cream)}
+  .card.free .num{color:var(--mustard)}
+  .card.free .row{border-top-color:var(--cream)}
+  .card.free .price{color:var(--mustard)}
+  .card.free a.buy{background:var(--mustard);color:var(--ink)}
 
   .start h2{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:16px}
   .start .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:36px}
@@ -139,6 +144,7 @@
     <h2>The Playbooks</h2>
     <p>$19 each. Bundle of all six for $49. Written for humans, built around the problems real businesses actually have.</p>
     <div class="grid">
+      <div class="card free"><span class="num">PLAYBOOK 00 · DO THIS FIRST</span><h3>Set Up the Robot</h3><p>The 20-minute starting point: get a free AI account, learn the one rule of prompting, and find out why you should never fully trust Gary. Every other playbook assumes you've done this.</p><div class="row"><span class="price">FREE</span><a class="buy" href="#start">Start here</a></div></div>
       <div class="card"><span class="num">PLAYBOOK 01</span><h3>The Review Whisperer</h3><p>Answer every Google review — the glowing ones, the unhinged ones — in your own voice, 15 minutes a week. Includes the "1-star from someone who's never been a customer" protocol.</p><div class="row"><span class="price">$19</span><a class="buy" href="#list">Get it</a></div></div>
       <div class="card"><span class="num">PLAYBOOK 02</span><h3>Quotes While You Sleep</h3><p>Turn a voice memo from the job site into a clean, priced estimate before your coffee's done. Your margins stay yours; the typing doesn't.</p><div class="row"><span class="price">$19</span><a class="buy" href="#list">Get it</a></div></div>
       <div class="card"><span class="num">PLAYBOOK 03</span><h3>Inbox Zero-ish</h3><p>The shared inbox is haunted. We can't fix that, but AI can draft 80% of the replies and flag the three emails that actually need you.</p><div class="row"><span class="price">$19</span><a class="buy" href="#list">Get it</a></div></div>
