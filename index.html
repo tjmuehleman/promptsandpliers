@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompts &amp; Pliers — AI tutorials for people with real jobs</title>
+<meta name="description" content="Plain-English AI playbooks for small business owners. Reviews, quotes, inboxes, hiring. No hype, no jargon, home by 6.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --orange:#F4541D; --ink:#20242E; --cream:#FAF3E3;
+    --mustard:#E8B931; --blue:#2D5BFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--cream);color:var(--ink);font-family:'Space Mono',monospace;line-height:1.6}
+  h1,h2,h3{font-family:'Archivo Black',sans-serif;line-height:1.1}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+  header{border-bottom:4px solid var(--ink);padding:16px 0;position:sticky;top:0;background:var(--cream);z-index:10}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px;font-family:'Archivo Black',sans-serif;font-size:1.15rem;text-decoration:none}
+  .brand svg{width:44px;height:44px}
+  nav a{margin-left:20px;text-decoration:none;font-weight:700;font-size:.9rem}
+  nav a:hover{color:var(--orange)}
+
+  .hero{padding:88px 0 64px;position:relative;overflow:hidden}
+  .hero h1{font-size:clamp(2.2rem,6vw,4.2rem);max-width:18ch}
+  .hero h1 em{font-style:normal;color:var(--orange);position:relative}
+  .hero p.sub{margin:24px 0 8px;font-size:1.15rem;max-width:52ch}
+  .hero .cursor{display:inline-block;width:.55em;height:1em;background:var(--blue);vertical-align:-0.12em;animation:blink 1.2s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .tape{display:inline-block;background:var(--mustard);padding:4px 14px;transform:rotate(-2deg);font-weight:700;font-size:.85rem;margin-bottom:22px}
+  .btn{display:inline-block;background:var(--orange);color:var(--cream);font-family:'Archivo Black',sans-serif;padding:16px 28px;text-decoration:none;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);transition:transform .1s, box-shadow .1s;margin-top:28px}
+  .btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--ink)}
+  .btn.secondary{background:var(--cream);color:var(--ink)}
+
+  .ticker{background:var(--ink);color:var(--cream);padding:10px 0;font-size:.85rem;white-space:nowrap;overflow:hidden}
+  .ticker span{display:inline-block;padding-left:100%;animation:scroll 28s linear infinite}
+  @keyframes scroll{to{transform:translateX(-100%)}}
+
+  section{padding:72px 0}
+  .who{background:var(--ink);color:var(--cream)}
+  .who h2,.shop h2,.gary h2,.list h2{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:16px}
+  .who p{max-width:64ch;margin-bottom:14px}
+  .who .strike{text-decoration:line-through;opacity:.55}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:24px;margin-top:40px}
+  .card{background:#fff;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:26px;display:flex;flex-direction:column;transition:transform .12s}
+  .card:hover{transform:translate(-2px,-2px)}
+  .card .num{font-size:.75rem;color:var(--orange);font-weight:700;letter-spacing:.1em}
+  .card h3{font-size:1.25rem;margin:8px 0 10px}
+  .card p{font-size:.92rem;flex:1}
+  .card .row{display:flex;justify-content:space-between;align-items:center;margin-top:18px;border-top:2px dashed var(--ink);padding-top:14px}
+  .price{font-family:'Archivo Black',sans-serif;font-size:1.3rem}
+  .card a.buy{font-weight:700;text-decoration:none;background:var(--mustard);padding:8px 14px;border:2px solid var(--ink)}
+  .card a.buy:hover{background:var(--orange);color:var(--cream)}
+
+  .gary{background:var(--mustard)}
+  .gary .inner{display:flex;gap:36px;align-items:center;flex-wrap:wrap}
+  .gary .bot{flex:0 0 180px}
+  .gary blockquote{font-size:1.1rem;max-width:48ch;border-left:6px solid var(--ink);padding-left:20px}
+  .gary cite{display:block;margin-top:12px;font-size:.85rem;font-style:normal;font-weight:700}
+
+  .list{background:var(--orange);color:var(--cream);text-align:center}
+  .list p{max-width:54ch;margin:0 auto 26px}
+  .list form{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .list input{font-family:'Space Mono',monospace;padding:14px 18px;border:3px solid var(--ink);font-size:1rem;min-width:280px}
+  .list button{font-family:'Archivo Black',sans-serif;background:var(--ink);color:var(--cream);border:3px solid var(--ink);padding:14px 24px;font-size:1rem;cursor:pointer}
+  .list button:hover{background:var(--blue)}
+  .list small{display:block;margin-top:14px;opacity:.85}
+
+  footer{background:var(--ink);color:var(--cream);padding:36px 0;font-size:.85rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  footer a{color:var(--mustard)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#">
+      <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><rect width="240" height="240" rx="28" fill="#20242E"/><g stroke-linecap="round"><path d="M62 196 L102 124" stroke="#F4541D" stroke-width="16"/><path d="M150 196 L116 124" stroke="#F4541D" stroke-width="16"/><circle cx="109" cy="118" r="13" fill="#E8B931"/><circle cx="109" cy="118" r="5" fill="#20242E"/><path d="M102 112 L88 70 Q86 62 93 60 L100 58 Q106 57 108 64 L116 106" fill="#FAF3E3"/><path d="M118 110 L132 70 Q135 62 128 60 L121 58 Q115 57 113 64" fill="#FAF3E3"/></g><rect x="104" y="20" width="12" height="44" rx="3" fill="#2D5BFF"><animate attributeName="opacity" values="1;1;0;0;1" dur="1.6s" repeatCount="indefinite"/></rect></svg>
+      Prompts &amp; Pliers
+    </a>
+    <nav>
+      <a href="#shop">Playbooks</a>
+      <a href="#gary">Gary</a>
+      <a href="#list">Free stuff</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ticker"><span>★ AI tutorials for people with real jobs ★ no jargon ★ no hype ★ no "synergy" ★ tested on actual small businesses ★ Gary the robot approves this message ★ be home by 6 ★&nbsp;</span></div>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="tape">FOR SMALL BUSINESS OWNERS, NOT TECH BROS</span>
+    <h1>Your competitors are using AI <em>badly</em>. Beat them politely.<span class="cursor"></span></h1>
+    <p class="sub">Plain-English AI playbooks for the work that eats your week: customer emails, estimates, Google reviews, hiring, social posts. Copy the prompt. Do the thing. Go home.</p>
+    <a class="btn" href="#shop">Browse the playbooks →</a>
+    <a class="btn secondary" href="#list">Get one free</a>
+  </div>
+</section>
+
+<section class="who">
+  <div class="wrap">
+    <h2>Who this is for</h2>
+    <p>You run a salon, a landscaping crew, a bakery, a three-truck HVAC outfit, a law office with one lawyer (you). You've heard AI can help. Every tutorial you've found assumes you <span class="strike">have a CTO</span> care about "vector embeddings."</p>
+    <p>We assume one thing: you have 20 minutes and a real problem. Each playbook is a specific scenario — "answer all my Google reviews," "draft my estimates" — with the exact prompts, the screenshots, and the part nobody else includes: <strong>how to check the robot's work before you trust it.</strong></p>
+  </div>
+</section>
+
+<section class="shop" id="shop">
+  <div class="wrap">
+    <h2>The Playbooks</h2>
+    <p>$19 each. Bundle of all six for $49. Written for humans, tested on actual businesses.</p>
+    <div class="grid">
+      <div class="card"><span class="num">PLAYBOOK 01</span><h3>The Review Whisperer</h3><p>Answer every Google review — the glowing ones, the unhinged ones — in your own voice, 15 minutes a week. Includes the "1-star from someone who's never been a customer" protocol.</p><div class="row"><span class="price">$19</span><a class="buy" href="#list">Get it</a></div></div>
+      <div class="card"><span class="num">PLAYBOOK 02</span><h3>Quotes While You Sleep</h3><p>Turn a voice memo from the job site into a clean, priced estimate before your coffee's done. Your margins stay yours; the typing doesn't.</p><div class="row"><span class="price">$19</span><a class="buy" href="#list">Get it</a></div></div>
+      <div class="card"><span class="num">PLAYBOOK 03</span><h3>Inbox Zero-ish</h3><p>The shared inbox is haunted. We can't fix that, but AI can draft 80% of the replies and flag the three emails that actually need you.</p><div class="row"><span class="price">$19</span><a class="buy" href="#list">Get it</a></div></div>
+      <div class="card"><span class="num">PLAYBOOK 04</span><h3>The Social Media Stand-In</h3><p>A month of posts in one sitting — in your voice, about your actual work, with zero stock photos of people high-fiving in an office.</p><div class="row"><span class="price">$19</span><a class="buy" href="#list">Get it</a></div></div>
+      <div class="card"><span class="num">PLAYBOOK 05</span><h3>Hiring Without Crying</h3><p>Job posts that attract humans, screening questions that filter politely, and interview scripts so you stop winging it. The robot reads the résumés; you meet the good ones.</p><div class="row"><span class="price">$19</span><a class="buy" href="#list">Get it</a></div></div>
+      <div class="card"><span class="num">PLAYBOOK 06</span><h3>Where Did My Tuesday Go?</h3><p>Follow-ups, scheduling, no-show reminders, "just checking in" emails — the admin sludge, automated. Reclaim one full afternoon a week. Use it for anything. Even a nap.</p><div class="row"><span class="price">$19</span><a class="buy" href="#list">Get it</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="gary" id="gary">
+  <div class="wrap inner">
+    <div class="bot">
+      <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="60" width="120" height="100" rx="10" fill="#20242E"/><rect x="60" y="85" width="22" height="22" rx="4" fill="#E8B931"/><rect x="118" y="85" width="22" height="22" rx="4" fill="#E8B931"/><rect x="72" y="128" width="56" height="8" rx="4" fill="#FAF3E3"/><rect x="92" y="35" width="16" height="28" fill="#20242E"/><circle cx="100" cy="28" r="9" fill="#F4541D"/><rect x="14" y="92" width="28" height="10" rx="5" fill="#20242E"/><rect x="158" y="92" width="28" height="10" rx="5" fill="#20242E"/><rect x="58" y="160" width="20" height="40" rx="6" fill="#20242E"/><rect x="122" y="160" width="20" height="40" rx="6" fill="#20242E"/><rect x="52" y="200" width="32" height="10" rx="4" fill="#20242E"/><rect x="116" y="200" width="32" height="10" rx="4" fill="#20242E"/></svg>
+    </div>
+    <div>
+      <h2>Meet Gary.</h2>
+      <blockquote>"Gary answered 31 Google reviews this week, drafted 14 estimates, and wrote a job post for a bakery in Ohio. Gary does not want a raise. Gary wants you to double-check his math, because Gary is a robot and occasionally invents a discount that does not exist."
+      <cite>— Every playbook includes a "Check Gary's Work" section. This is why.</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="list" id="list">
+  <div class="wrap">
+    <h2>The Shop Manual — free, weekly, short</h2>
+    <p>One real AI use-case for your business every Tuesday. Under 3 minutes to read, under 10 to try. Subscribe and get <strong>The Review Whisperer free</strong> while the shop is being set up.</p>
+    <form action="mailto:tj@standardco.de" method="get">
+      <input type="email" name="subject" placeholder="you@yourbusiness.com" required>
+      <button type="submit">Sign me up</button>
+    </form>
+    <small>No spam. Unsubscribing is one click and zero guilt.</small>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Prompts &amp; Pliers · promptsandpliers.com</span>
+    <span>Made by humans. Reviewed by Gary. <a href="https://instagram.com/promptsandpliers">@promptsandpliers</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

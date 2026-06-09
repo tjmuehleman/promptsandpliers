@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <rect width="240" height="240" rx="28" fill="#20242E"/>
+  <!-- pliers: two handles crossing at a pivot, jaws gripping a cursor -->
+  <g stroke-linecap="round">
+    <!-- handles -->
+    <path d="M62 196 L102 124" stroke="#F4541D" stroke-width="16"/>
+    <path d="M150 196 L116 124" stroke="#F4541D" stroke-width="16"/>
+    <!-- pivot -->
+    <circle cx="109" cy="118" r="13" fill="#E8B931"/>
+    <circle cx="109" cy="118" r="5" fill="#20242E"/>
+    <!-- jaws -->
+    <path d="M102 112 L88 70 Q86 62 93 60 L100 58 Q106 57 108 64 L116 106" fill="#FAF3E3"/>
+    <path d="M116 112 L126 68 Q128 60 121 58 L114 56 Q108 55 106 62" fill="#FAF3E3" opacity="0"/>
+    <path d="M118 110 L132 70 Q135 62 128 60 L121 58 Q115 57 113 64" fill="#FAF3E3"/>
+  </g>
+  <!-- the cursor being gripped -->
+  <rect x="104" y="20" width="12" height="44" rx="3" fill="#2D5BFF">
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="1.6s" repeatCount="indefinite"/>
+  </rect>
+  <!-- wordmark dot -->
+  <text x="120" y="226" font-family="monospace" font-size="20" fill="#FAF3E3" text-anchor="middle" font-weight="bold">P&amp;P</text>
+</svg>
