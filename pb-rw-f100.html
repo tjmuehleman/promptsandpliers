@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Review Whisperer — Founding 100 Edition</title>
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--orange:#F4541D;--ink:#20242E;--cream:#FAF3E3;--mustard:#E8B931;--blue:#2D5BFF}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--cream);color:var(--ink);font-family:'Space Mono',monospace;line-height:1.7;padding:40px 24px}
+article{max-width:760px;margin:0 auto}
+h1,h2,h3{font-family:'Archivo Black',sans-serif;line-height:1.2;margin:36px 0 14px}
+h1{font-size:clamp(1.9rem,5vw,2.8rem);margin-top:8px}
+h2{font-size:1.4rem;border-bottom:3px solid var(--ink);padding-bottom:8px}
+h3{font-size:1.05rem}
+p,li{margin-bottom:12px}
+ul,ol{padding-left:24px;margin-bottom:16px}
+pre{background:var(--ink);color:var(--cream);padding:18px;overflow-x:auto;font-size:.85rem;margin:16px 0;border-left:6px solid var(--orange)}
+code{font-family:'Space Mono',monospace}
+p code,li code{background:#fff;border:1px dashed var(--ink);padding:1px 5px;font-size:.85em}
+pre code{background:none;border:none;padding:0}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:.85rem}
+th,td{border:2px solid var(--ink);padding:8px 10px;text-align:left}
+th{background:var(--mustard)}
+hr{border:none;border-top:3px dashed var(--ink);margin:32px 0}
+blockquote{border-left:6px solid var(--mustard);padding-left:16px;opacity:.9;margin-bottom:14px}
+em{font-style:italic}
+.badge{display:inline-block;background:var(--mustard);padding:4px 14px;transform:rotate(-2deg);font-weight:700;font-size:.8rem;margin-bottom:10px}
+footer{max-width:760px;margin:50px auto 0;padding-top:18px;border-top:3px solid var(--ink);font-size:.8rem;opacity:.8}
+</style>
+</head>
+<body>
+<article>
+<span class="badge">FOUNDING 100 EDITION · NOT FOR REDISTRIBUTION (GARY IS WATCHING)</span>
+<h1>The Review Whisperer</h1>
+<h3>Playbook 01 · Prompts &amp; Pliers · promptsandpliers.com</h3>
+<p>Answer every Google review — the glowing ones, the unhinged ones — in your own voice, in 15 minutes a week.</p>
+<hr />
+<h2>Why bother (the 90-second case)</h2>
+<p>People read your review <em>replies</em>, not just your reviews. A business that responds to everything — warmly, specifically, without sounding like a robot or a lawyer — looks alive and looks like it cares. Google also tends to favor active profiles in local results, and "responds to reviews" is part of looking active.</p>
+<p>The problem was never that you don't know what to say. It's that it takes 20 minutes per review to say it well, you have 47 of them unanswered, and review #31 called your receptionist "an agent of chaos."</p>
+<p>That's a drafting problem. Drafting problems are exactly what AI is good at.</p>
+<p><strong>What you'll have by the end:</strong> a reusable "voice profile" for your business, four ready-to-go prompts (positive, mixed, negative, and fake/unhinged reviews), and a 15-minute weekly routine. Run your first batch on your own reviews and judge the drafts yourself — that's the only test that matters.</p>
+<p><strong>What you need:</strong> a free ChatGPT or Claude account, your Google Business Profile open in another tab. That's it.</p>
+<hr />
+<h2>Step 1: Build your voice profile (do once, 10 minutes)</h2>
+<p>Generic AI replies smell like generic AI replies ("Thank you for your valuable feedback!"). The fix is telling the AI who you are <em>once</em>, then reusing it forever.</p>
+<p>Copy this, fill in the brackets, and save the result somewhere you can paste from (a note on your phone is fine):</p>
+<pre><code>I run [business type] called [name] in [city]. I'm going to ask you
+to draft replies to Google reviews. First, learn my voice:
+
+- We're [3 adjectives — e.g., &quot;casual, warm, a little funny&quot;]
+- We say [things you actually say — e.g., &quot;y'all&quot;, &quot;no worries&quot;]
+- We never say [e.g., &quot;valued customer&quot;, &quot;we apologize for any
+  inconvenience&quot;, corporate anything]
+- When something goes wrong we [e.g., &quot;own it plainly and offer to
+  make it right in one sentence, not three paragraphs&quot;]
+- Sign-off: [e.g., &quot;— Maria &amp; the team&quot;]
+
+Here are 2 real replies I've written that sound like me:
+[paste one or two — even old texts to customers work]
+
+Reply only &quot;Got it&quot; — I'll paste reviews next.
+</code></pre>
+<p><strong>Pro move:</strong> the two real examples matter more than the adjectives. The AI imitates what you show it far better than what you describe.</p>
+<hr />
+<h2>Step 2: The four prompts</h2>
+<h3>A. The positive review (90% of your volume)</h3>
+<pre><code>Draft a reply to this 5-star review. Keep it under 50 words.
+Mention one specific detail from their review so it's clearly not
+canned. Don't thank them twice. Don't invite them back more than
+once.
+
+Review: [paste]
+</code></pre>
+<h3>B. The mixed review (3–4 stars, "loved X, but Y...")</h3>
+<pre><code>Draft a reply to this mixed review. Thank them for the specific
+praise, acknowledge the complaint without groveling or making
+excuses, and say one concrete thing we're doing about it. Under
+80 words. Do not offer a discount.
+
+Review: [paste]
+</code></pre>
+<h3>C. The legitimate negative review</h3>
+<pre><code>Draft a reply to this negative review. Rules:
+- Open by acknowledging the specific problem, not with &quot;We're sorry
+  you feel that way&quot; (that phrase is banned)
+- No excuses, no blaming staff, no essay — under 80 words
+- Offer to make it right and move the conversation offline: include
+  [phone or email]
+- Stay calm and human. Future customers reading this matter more
+  than winning the argument.
+
+Review: [paste]
+</code></pre>
+<h3>D. The fake, unhinged, or never-was-a-customer review</h3>
+<p>This is the one that ruins your evening. The goals flip: you're not writing to the reviewer, you're writing to everyone else who reads it.</p>
+<pre><code>This review is [fake / from someone we have no record of / wildly
+inaccurate]. Draft a reply that:
+- Politely states we can't find any record of their visit (if true)
+- Calmly corrects the single most important false claim, with no
+  heat
+- Invites them to contact [phone/email] if we're mistaken
+- Under 60 words, zero sarcasm, zero defensiveness
+
+Review: [paste]
+</code></pre>
+<p>Then, separately: report it to Google (Business Profile → review → flag). The reply is for the public record while Google takes its time.</p>
+<hr />
+<h2>Step 3: Check Gary's work (do not skip)</h2>
+<p>The robot drafts; you sign. Before any reply goes up, scan for the Four Inventions — things AI adds that nobody asked for:</p>
+<ol>
+<li><strong>Invented facts.</strong> "We've passed your note to our pastry chef!" You don't have a pastry chef. AI loves inventing staff, policies, and discounts. <em>If you didn't tell it, it made it up.</em></li>
+<li><strong>Invented promises.</strong> "We'd love to comp your next visit!" — that's a coupon you now legally-ish owe a stranger. Delete any offer you didn't explicitly choose to make.</li>
+<li><strong>Wrong warmth.</strong> A breezy "Thanks so much for the love!!" on a review about a serious complaint reads as mockery. Match the gravity.</li>
+<li><strong>Admissions.</strong> In anything that could become a dispute (injury, damage, refund fight), don't let the AI admit fault on your behalf. When in doubt on these, reply minimally and handle it by phone — or skip the AI entirely for that one.</li>
+</ol>
+<p>If a reply passes the Four Inventions scan and sounds like you when read aloud, post it.</p>
+<hr />
+<h2>Step 4: The 15-minute weekly routine</h2>
+<ul>
+<li><strong>Minute 0–2:</strong> Open Google Business Profile → Reviews → sort newest. Open your AI chat, paste your voice profile (or continue last week's conversation).</li>
+<li><strong>Minute 2–10:</strong> Paste reviews in batches: "Here are 6 reviews, draft a reply to each using my voice." Use prompt A/B/C/D rules for the tricky ones.</li>
+<li><strong>Minute 10–14:</strong> Four Inventions scan. Edit the one or two that need it.</li>
+<li><strong>Minute 14–15:</strong> Paste replies into Google. Done. Same time next week.</li>
+</ul>
+<p><strong>Backlog edition (first week only):</strong> got 40 unanswered reviews? Do the most recent 10 and anything negative from the last 90 days. Replying to a glowing review from 2023 looks stranger than leaving it alone.</p>
+<hr />
+<h2>The cheat sheet</h2>
+<table>
+<thead>
+<tr>
+<th>Review type</th>
+<th>Word cap</th>
+<th>One rule that matters most</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5-star</td>
+<td>50</td>
+<td>Mention one specific detail</td>
+</tr>
+<tr>
+<td>Mixed</td>
+<td>80</td>
+<td>One concrete fix, no discount</td>
+</tr>
+<tr>
+<td>Negative</td>
+<td>80</td>
+<td>"Sorry you feel that way" is banned</td>
+</tr>
+<tr>
+<td>Fake/unhinged</td>
+<td>60</td>
+<td>You're writing for the audience, not the reviewer</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>© 2026 Prompts &amp; Pliers. You bought this (or got it free — nice). Use it for your business all you want; please don't resell it. Gary reviewed this document and found zero invented discounts.</em></p>
+</article>
+<footer>© 2026 Prompts &amp; Pliers · promptsandpliers.com · This link is yours as a founding member — please don't post it publicly.</footer>
+</body>
+</html>
