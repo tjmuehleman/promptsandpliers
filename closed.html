@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompts &amp; Pliers</title>
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#20242E;color:#FAF3E3;font-family:'Space Mono',monospace;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:24px}
+.bot{width:90px;margin:0 auto 30px;opacity:.9}
+p{font-size:1rem;margin-bottom:8px}
+.dim{opacity:.55;font-size:.85rem;margin-bottom:34px}
+form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+input[type=email]{font-family:'Space Mono',monospace;padding:13px 16px;border:2px solid #FAF3E3;background:transparent;color:#FAF3E3;font-size:.95rem;min-width:260px}
+input[type=email]::placeholder{color:#FAF3E3;opacity:.4}
+button{font-family:'Space Mono',monospace;font-weight:700;background:#F4541D;color:#FAF3E3;border:2px solid #F4541D;padding:13px 20px;font-size:.95rem;cursor:pointer}
+button:hover{background:#E8B931;border-color:#E8B931;color:#20242E}
+.cursor{display:inline-block;width:.55em;height:1em;background:#2D5BFF;vertical-align:-0.12em;animation:b 1.2s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+</style>
+</head>
+<body>
+<div>
+  <div class="bot"><svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="60" width="120" height="100" rx="10" fill="#FAF3E3"/><rect x="60" y="85" width="22" height="22" rx="4" fill="#20242E"/><rect x="118" y="85" width="22" height="22" rx="4" fill="#20242E"/><rect x="72" y="132" width="56" height="6" rx="3" fill="#F4541D"/><rect x="92" y="35" width="16" height="28" fill="#FAF3E3"/><circle cx="100" cy="28" r="9" fill="#F4541D"/></svg></div>
+  <p>The workshop is full.<span class="cursor"></span></p>
+  <p class="dim">100 benches. 100 people. Gary is at capacity.</p>
+  <form action="https://formsubmit.co/tj+pp@standardco.de" method="POST">
+    <input type="hidden" name="_subject" value="Waitlist — after the 100">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+    <input type="email" name="email" placeholder="leave your address" required>
+    <button type="submit">→</button>
+  </form>
+  <p class="dim" style="margin-top:18px">someone may contact you.</p>
+</div>
+</body>
+</html>
