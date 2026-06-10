@@ -81,6 +81,7 @@
   .list input{font-family:'Space Mono',monospace;padding:14px 18px;border:3px solid var(--ink);font-size:1rem;min-width:280px}
   .list button{font-family:'Archivo Black',sans-serif;background:var(--ink);color:var(--cream);border:3px solid var(--ink);padding:14px 24px;font-size:1rem;cursor:pointer}
   .list button:hover{background:var(--blue)}
+  .list button:disabled{opacity:.65;cursor:wait;background:var(--ink)}
   .list small{display:block;margin-top:14px;opacity:.85}
 
   footer{background:var(--ink);color:var(--cream);padding:36px 0;font-size:.85rem}
@@ -192,5 +193,16 @@
   </div>
 </footer>
 
+<script>
+document.querySelectorAll('form').forEach(function(f){
+  f.addEventListener('submit',function(){
+    var b=f.querySelector('button');
+    if(b && !b.disabled){
+      b.disabled=true;
+      b.textContent='Hold on — Gary is filing it…';
+    }
+  });
+});
+</script>
 </body>
 </html>

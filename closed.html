@@ -17,6 +17,7 @@ input[type=email]{font-family:'Space Mono',monospace;padding:13px 16px;border:2p
 input[type=email]::placeholder{color:#FAF3E3;opacity:.4}
 button{font-family:'Space Mono',monospace;font-weight:700;background:#F4541D;color:#FAF3E3;border:2px solid #F4541D;padding:13px 20px;font-size:.95rem;cursor:pointer}
 button:hover{background:#E8B931;border-color:#E8B931;color:#20242E}
+button:disabled{opacity:.5;cursor:wait}
 .cursor{display:inline-block;width:.55em;height:1em;background:#2D5BFF;vertical-align:-0.12em;animation:b 1.2s steps(1) infinite}
 @keyframes b{50%{opacity:0}}
 </style>
@@ -35,5 +36,11 @@ button:hover{background:#E8B931;border-color:#E8B931;color:#20242E}
   </form>
   <p class="dim" style="margin-top:18px">someone may contact you.</p>
 </div>
+<script>
+document.querySelector('form').addEventListener('submit',function(e){
+  var b=e.target.querySelector('button');
+  if(b && !b.disabled){b.disabled=true;b.textContent='…';}
+});
+</script>
 </body>
 </html>
